@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Sans&display=swap');
+
+:root {
+    --orange: rgb(240, 169, 15);
+    --red: rgb(252, 86, 108);
+    --dusky-green: rgb(6, 170, 94);
+    --opac-white: rgba(255, 255, 255, .8);
+    --form-txt:  rgba(255, 255, 255, .5);
+    --darky: #1d2b3a;
+    --light-grey: rgb(105, 105, 105);
+    --black: rgb(14, 13, 13);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Caveat', cursive;
+}
+
+body {
+    background-color:var(--orange) ;
+}
+
+
+/*
+MAIN CONTAINER
+*/
+
+.main-container {
+    display: grid;
+    grid-template-columns: calc(100% -60%) auto;
+    height: 210vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--darky);
+}
+
+.image-container{
+    display: grid;
+    place-items: center;
+    background-color: var(--dusky-green);
+    color: white;
+}
+.image-container > img {
+    width: calc(90%);
+}
+/*
+FORM CONTAINER
+*/
+
+.form-container {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 50px;
+    color: var(--form-txt);
+    place-items: center;
+}
+
+.form-heading {
+    grid-column: 1 / -1;
+    letter-spacing: .06em;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+input {
+    display: block;
+    border-radius: 4px;
+    border: 0;
+    border-bottom: 1px solid rgb(0,0,0,.4);
+    padding: 6px 6px 6px 10px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .5s ease-in;
+    color: var(--opac-white);
+} 
+
+input::placeholder{
+    content: none;
+}
+
+span {
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .4s;
+}
+
+[type="submit"]{
+    border: 0;
+    background-color: var(--dusky-green);
+    color: white;
+    padding: 10px 50px;
+    letter-spacing: .05em;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 17px;
+    outline: none;
+}
+
+form {
+    width: auto;
+    display: grid;
+    place-items: center;
+}
