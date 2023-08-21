@@ -96,12 +96,13 @@ span {
     border: 0;
     background-color: var(--dusky-green);
     color: white;
-    padding: 10px 50px;
+    padding: 5px 45px;
     letter-spacing: .05em;
-    border-radius: 5px;
+    border-radius: 30px;
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 20px;
     outline: none;
+    margin-left: 340px;
 }
 
 form {
@@ -112,7 +113,9 @@ form {
 
 .btm-text {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 25px;
+    padding: 6px;
+    margin-left: 340px;
 }
 .btm-text-highlighted {
     color: var(--dusky-green);
@@ -366,3 +369,4 @@ a {
         order: 1;
     }
 }
+
