@@ -223,7 +223,7 @@ input:valid {
 	}
 }
 
-.outro-overlay {
+.outer-overlay {
     display: flex;
     background-color: var(--dusky-green);
     height: 100vh;
@@ -235,11 +235,11 @@ input:valid {
     color: white;
     position: relative;
 }
-.outro-overlay > #signedUp-illustration {
+.outer-overlay > #signedUp-illustration {
     height: 90%;
     z-index: 2;
 }
-.outro-overlay > .shape {
+.outer-overlay > .shape {
     position: absolute;
     top: 0;
     left: 0;
@@ -247,7 +247,7 @@ input:valid {
     animation: 1.3s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;
     width: 150%;
 }
-.outro-overlay > .outro-greeting {
+.outer-overlay > .outer-greeting {
     z-index: 3;
     font-weight: 700;
     letter-spacing: .02em;
@@ -352,19 +352,19 @@ a {
         display: flex;
         align-items: center;
     }
-    .outro-overlay {
+    .outer-overlay {
         flex-direction: column;
         justify-content: center;
         gap: 30px;
     }
-    .outro-overlay > #signedUp-illustration {
+    .outer-overlay > #signedUp-illustration {
         height: auto;
         z-index: 2; 
     }
-    .outro-overlay > .shape {
+    .outer-overlay > .shape {
         display: none;
     }
-    .outro-overlay > .outro-greeting {
+    .outer-overlay > .outer-greeting {
         font-size: 20px;
         order: 1;
     }
