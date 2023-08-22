@@ -79,6 +79,7 @@ input {
     background-color: rgba(255, 255, 255, 0);
     transition: all .5s ease-in;
     color: var(--opac-white);
+    font-size: 25px;
 } 
 
 input::placeholder{
@@ -224,7 +225,7 @@ input:valid {
 }
 
 .outer-overlay {
-    display: flex;
+    display: grid;
     background-color: var(--dusky-green);
     height: 100vh;
     width: 100%;
@@ -234,10 +235,20 @@ input:valid {
     justify-content: space-evenly;
     color: white;
     position: relative;
+    align-items: center;
+    position: fixed;
 }
+
+.outer-overlay > .website-name{
+    margin-left: 900px;
+
+}
+
+
 .outer-overlay > #signedUp-illustration {
-    height: 90%;
+    height: 100%;
     z-index: 2;
+    position: fixed;
 }
 .outer-overlay > .shape {
     position: absolute;
@@ -252,6 +263,9 @@ input:valid {
     font-weight: 700;
     letter-spacing: .02em;
     word-spacing: .1em;
+    font-size: 40px;
+    margin-left: 1000px;
+    position: fixed;
 }
 .disabled {
     display: none ;
@@ -283,15 +297,17 @@ input:valid {
     bottom: 0;
     padding-bottom: 10px;
     z-index: 5;
+    margin-left: 1000px
 }
 .author-link,
 a {
     text-decoration: none;
-    color: var(--light-grey);
+    color: purple;
     transition: .3s ease-out;
+    font-size: 25px;
 }
 .author-link > a:hover {
-    color: var(--darky);
+    color: whitesmoke;
 }
 
 
