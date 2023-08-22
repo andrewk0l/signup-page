@@ -32,7 +32,7 @@ for(let i = 0; i < inputFields.length; i++) {
     })
 }
 
-console.log(errorDisplay)
+/*console.log(errorDisplay)*/
 
 phone.addEventListener('keyup', (e) => {
     let message = errorDisplay[3]

@@ -52,11 +52,11 @@ FORM CONTAINER
 */
 
 .form-container {
-    width: 50vw;
+    width: 52vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 45px;
-    padding: 50px;
+    gap: 22px;
+    padding: 101px;
     color: var(--form-txt);
     place-items: center;
 }
